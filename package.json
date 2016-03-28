@@ -1,6 +1,6 @@
 {
   "name": "spidymq-service",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A SpidyMQ server for all your in-memory message queue needs",
   "main": "index.js",
   "engines": {

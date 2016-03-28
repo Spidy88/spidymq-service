@@ -88,7 +88,7 @@ function createRoutes(mq) {
     }
 
     function sendMessage(subscriber, message) {
-        console.log('Sending message to subscriber: ', subscriber, message);
+        winston.debug('Sending message to subscriber');
         request
             .post({
                 url: subscriber.notifyUrl,
@@ -96,10 +96,10 @@ function createRoutes(mq) {
                 json: true
             })
             .on('response', function(response) {
-                console.log('Message delivered to subscriber');
+                winston.debug('Message delivered to subscriber');
             })
             .on('error', function(error) {
-                console.log('Error delivering message to subscriber');
+                winston.debug('Error delivering message to subscriber');
             });
     }
 }
