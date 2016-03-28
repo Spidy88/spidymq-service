@@ -1,0 +1,44 @@
+{
+  "name": "spidymq-service",
+  "version": "1.0.0",
+  "description": "A SpidyMQ server for all your in-memory message queue needs",
+  "main": "index.js",
+  "engines": {
+    "node": "4.4.0"
+  },
+  "scripts": {
+    "start": "nf start",
+    "test": "mocha --harmony --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spidy88/spidymq-service.git"
+  },
+  "keywords": [
+    "message-queue",
+    "spidymq"
+  ],
+  "author": "Nick Ferraro <the.nick.ferraro@gmail.com>",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/Spidy88/spidymq-service/issues"
+  },
+  "homepage": "https://github.com/Spidy88/spidymq-service#readme",
+  "dependencies": {
+    "body-parser": "1.15.0",
+    "config": "1.19.0",
+    "connect": "3.4.1",
+    "lodash": "^4.6.1",
+    "moment": "^2.12.0",
+    "request": "^2.69.0",
+    "router": "1.1.4",
+    "winston": "2.2.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "2.4.5",
+    "mockery": "1.4.1",
+    "sinon": "1.17.3",
+    "sinon-chai": "2.8.0"
+  }
+}
